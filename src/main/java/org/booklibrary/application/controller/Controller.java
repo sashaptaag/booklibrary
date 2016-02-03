@@ -1,8 +1,8 @@
-package org.booklibrary.server.controller;
+package org.booklibrary.application.controller;
 
 import java.util.List;
-import org.booklibrary.server.Genre;
-import org.booklibrary.server.Book;
+import org.booklibrary.core.Genre;
+import org.booklibrary.core.Book;
 
 public interface Controller {
     /**

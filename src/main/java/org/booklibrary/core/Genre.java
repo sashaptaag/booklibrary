@@ -1,4 +1,4 @@
-package org.booklibrary.server;
+package org.booklibrary.core;
 
 public class Genre {
     private Long id;

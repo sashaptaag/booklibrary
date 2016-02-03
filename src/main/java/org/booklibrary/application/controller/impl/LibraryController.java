@@ -1,7 +1,8 @@
-package org.booklibrary.server.controller;
+package org.booklibrary.application.controller.impl;
 
-import org.booklibrary.server.Book;
-import org.booklibrary.server.Genre;
+import org.booklibrary.application.controller.Controller;
+import org.booklibrary.core.Book;
+import org.booklibrary.core.Genre;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;

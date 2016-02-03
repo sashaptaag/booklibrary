@@ -1,16 +1,33 @@
-package org.booklibrary.server;
+package org.booklibrary.core;
 
-import java.util.List;
+/*import java.util.List;*/
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "book")
 public class Book {
+    @Id
+    @Column(name = "id")
     private Long id;
+
+    @Column(name = "title")
     private String title;
+
+    @Column(name = "isdn")
     private String isdn;
-    private String publisher;
+
+    /*private String publisher;
     private String keywords;
     private String comments;
     private List<Author> author;
-    private List<Genre> genre;
+    private List<Genre> genre;*/
+
+    public Book() {
+    }
 
     public Book(Long id, String title) {
         this.id = id;
@@ -33,7 +50,7 @@ public class Book {
         this.title = title;
     }
 
-    public String getPublisher() {
+    /*public String getPublisher() {
         return publisher;
     }
 
@@ -72,12 +89,17 @@ public class Book {
     public void setGenre(List<Genre> genre) {
         this.genre = genre;
     }
-
+*/
     public String getIsdn() {
         return isdn;
     }
 
     public void setIsdn(String isdn) {
         this.isdn = isdn;
+    }
+
+    @Override
+    public String toString() {
+        return "Book: " + this.id + ", " + this.title + ", " + this.isdn;
     }
 }
